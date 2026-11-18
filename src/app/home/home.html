@@ -1,0 +1,40 @@
+<!-- <h2>Counter App</h2>
+
+<h1>{{count}}</h1>
+
+<button (click)="increase()">Increase</button> -->
+
+
+<!-- different btn pr div k different colors -->
+
+<button (click)="handleclick(1)">Red</button>
+<button (click)="handleclick(2)">Blue</button>
+<button (click)="handleclick(3)">Pink</button>
+<button (click)="handleclick(4)">Purple</button>
+
+@if(color == 1){
+    <div style="background-color: red; height: 200px;width: 200px;"></div>
+}
+@else if(color == 2){
+    <div style="background-color: blue; height: 200px;width: 200px;"></div>
+}
+@else if(color == 3){
+    <div style="background-color: pink; height: 200px;width: 200px;"></div> 
+}
+@else{
+    <div style="background-color: purple; height: 200px;width: 200px;"></div>
+}
+
+<div style="width: 500px; height: 500px;">
+
+  <button (click)="hide()">hide</button>
+
+  <button (click)="show()">show</button>
+
+  @if (display == true) {
+    <div style="background-color: pink; height: 200px; width: 200px;"></div>
+  } @else {
+    <p>Box is hidden</p>
+  }
+
+</div>
